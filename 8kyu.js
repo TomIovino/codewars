@@ -163,3 +163,31 @@ var max = function(list){
 function removeExclamationMarks(s) {
   return s.split('!').join('');
 }
+
+// 10/11/2022
+// 8 kyu
+// Grasshopper - Messi goals function
+// 1484479% of 4,70016,071 of 45,252danleavitt01 Issue Reported
+//  JavaScript
+// Node v14.x
+// VIM
+// EMACS
+// Instructions
+// Output
+// Messi goals function
+// Messi is a soccer player with goals in three leagues:
+
+// LaLiga
+// Copa del Rey
+// Champions
+// Complete the function to return his total number of goals in all three leagues.
+
+// Note: the input will always be valid.
+
+// For example:
+
+// 5, 10, 2  -->  17
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals+copaDelReyGoals+championsLeagueGoals; 
+}
