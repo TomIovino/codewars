@@ -19,3 +19,31 @@
 function rentalCarCost(d) {
     return d >= 3 ? d >= 7 ? d*40-50 : d*40-20 : d*40;
   }
+
+//   9/28/2022
+//   8 kyu
+//   Double Char
+//   37714493% of 4,31522,039 of 43,920Alpri Else
+//    JavaScript
+//   Node v10.x
+//   VIM
+//   EMACS
+//   Instructions
+//   Output
+//   Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+  
+//   Examples (Input -> Output):
+//   * "String"      -> "SSttrriinngg"
+//   * "Hello World" -> "HHeelllloo  WWoorrlldd"
+//   * "1234!_ "     -> "11223344!!__  "
+//   Good Luck!
+
+function doubleChar(str) {
+    let newStr = '';
+    
+    for(let i=0; i<str.length; i++)
+      newStr += str[i]+str[i];
+  
+    return newStr;
+  }
+  
