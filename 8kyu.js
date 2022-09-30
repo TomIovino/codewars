@@ -72,3 +72,24 @@ function doubleChar(str) {
   function century(year) {
     return Math.ceil(year/100);
   }
+
+// 9/30/2022
+// 8 kyu
+// Quarter of the year
+// 2885692% of 4,12220,874 of 50,269Orses
+//  JavaScript
+// Node v14.x
+// VIM
+// EMACS
+// Instructions
+// Output
+// Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
+
+// For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; and month 11 (November), is part of the fourth quarter.
+
+const quarterOf = (month) => {
+  if(month >= 10) return 4;
+  else if(month >= 7) return 3;
+  else if(month >= 4) return 2;
+  else return 1;
+}
