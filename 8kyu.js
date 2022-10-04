@@ -94,3 +94,25 @@ const quarterOf = (month) => {
   else return 1;
 }
 
+// 10/04/2022
+// 8 kyu
+// Grasshopper - Personalized Message
+// 2375889% of 5,19924,884 of 54,147danleavitt01 Issue Reported
+//  JavaScript
+// Node v10.x
+// VIM
+// EMACS
+// Instructions
+// Output
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+// Use conditionals to return the proper message:
+
+// case	return
+// name equals owner	'Hello boss'
+// otherwise	'Hello guest'
+// FUNDAMENTALS
+
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest';
+}
