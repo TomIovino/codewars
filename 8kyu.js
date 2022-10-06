@@ -147,3 +147,19 @@ var max = function(list){
   
   return Math.max(...list);
 }
+
+// 10/6/2022
+// 8 kyu
+// Remove exclamation marks
+// 2749490% of 4,80318,458 of 48,246wichu
+//  JavaScript
+// Node v14.x
+// VIM
+// EMACS
+// Instructions
+// Output
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+function removeExclamationMarks(s) {
+  return s.split('!').join('');
+}
