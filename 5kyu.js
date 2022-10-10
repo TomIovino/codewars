@@ -39,3 +39,43 @@ function rot13(message){
     
     return finalStr;
   }
+
+10/10/2022
+5 kyu
+Extract the domain name from a URL
+177639482% of 4,62122,861 of 50,308xianpants10 Issues Reported
+ JavaScript
+Node v14.x
+VIM
+EMACS
+Instructions
+Output
+Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:
+
+* url = "http://github.com/carbonfive/raygun" -> domain name = "github"
+* url = "http://www.zombie-bites.com"         -> domain name = "zombie-bites"
+* url = "https://www.cnet.com"                -> domain name = cnet"
+
+function domainName(url){
+  let newUrl = '';
+  
+  if(url.slice(0,7) === "http://"){
+    newUrl = url.slice(7);
+
+    if(newUrl.slice(0,3) === "www")
+      newUrl = newUrl.slice(4);
+  }
+  else if(url.slice(0,8) === "https://"){
+    newUrl = url.slice(8);
+
+    if(newUrl.slice(0,3) === "www")
+      newUrl = newUrl.slice(4);    
+  }
+  else if(url.slice(0,3) === "www"){
+    newUrl = url.slice(4);
+  }
+  else
+    newUrl = url;
+  
+  return newUrl.split('.')[0];
+}  //learned about replace() after this
