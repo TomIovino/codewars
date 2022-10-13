@@ -191,3 +191,23 @@ function removeExclamationMarks(s) {
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals; 
 }
+
+// 10/13/2022
+// 8 kyu
+// Volume of a Cuboid
+// 1784378% of 5,38018,226 of 54,403user51964771 Issue Reported
+//  JavaScript
+// Node v8.1.3
+// VIM
+// EMACS
+// Instructions
+// Output
+// Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
+
+// GEOMETRYFUNDAMENTALS
+
+class Kata {
+  static getVolumeOfCuboid(l,w,h) {
+    return l*w*h;
+  }
+} // why is static in an 8kyu, trying to confuse new programmers?
