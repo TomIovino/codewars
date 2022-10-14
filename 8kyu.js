@@ -211,3 +211,27 @@ class Kata {
     return l*w*h;
   }
 } // why is static in an 8kyu, trying to confuse new programmers?
+
+// 10/14/2022
+// 8 kyu
+// Third Angle of a Triangle
+// 1136485% of 4,71220,557 of 48,272user5651159
+//  JavaScript
+// Node v14.x
+// VIM
+// EMACS
+// Instructions
+// Output
+// You are given two interior angles (in degrees) of a triangle.
+
+// Write a function to return the 3rd.
+
+// Note: only positive integers will be tested.
+
+// https://en.wikipedia.org/wiki/Triangle
+
+// FUNDAMENTALS
+
+function otherAngle(a, b) {
+  return 180-(a+b);
+}
