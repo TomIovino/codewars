@@ -11,6 +11,23 @@
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 // ARRAYSFUNDAMENTALS
 
+//P taking in array of strings - will only be strings, no null/undefined/numbers etc.
+//R array of strings - each original string is prepended by a number, colon and space ascending from 1 ("1: a")
+
 var number=function(array){
-    //your awesome code here
-  }
+    //for loop iterate over initial array
+    //have counter that increments for ascending numbers
+    //push to a new array
+
+    let counter = 1;
+    let newArr = [];
+
+    for(let i=0; i<array.length; i++){
+        newArr.push(''+counter+': '+array[i]);'
+        counter++
+    }
+
+    return newArr;
+}
+
+ // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"] 
