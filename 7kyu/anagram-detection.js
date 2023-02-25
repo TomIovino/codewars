@@ -12,10 +12,7 @@
 // "Buckethead" is an anagram of "DeathCubeK"
 
 // write the function isAnagram
-var isAnagram = function(test, original) {
-    let testArr = test.toLowerCase().split('').sort();
-    let originalArr = original.toLowerCase().split('').sort();
-    
-    return testArr.join('') === originalArr.join('');
-  };
-  
+
+const isAnagram = (test, original) => {
+  return test.toLowerCase().split('').sort().join('') === original.toLowerCase().split('').sort().join('');
+}  
