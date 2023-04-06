@@ -4,4 +4,4 @@
 
 // To make this challange harder and to promp the challenger to read up about coercion I have disabled some of the built in methods including .toString(), .join(), .split(), parseInt and .Number().
 
-const add=(a,b)=>a==b //performs type coercion ==
+const add=(a,b)=>a==b //performs type coercion  ==
