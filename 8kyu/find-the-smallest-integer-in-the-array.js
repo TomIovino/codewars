@@ -1,4 +1,4 @@
-// 12/21/2022
+// 5/6/2023
 
 // Given an array of integers your solution should find the smallest integer.
 
