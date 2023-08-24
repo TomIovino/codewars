@@ -16,3 +16,16 @@ function factorial(n)
   
   return tot.reduce((acc,c)=> acc*=c,1);
 }
+
+
+// 8/23/2023
+
+// Your task is to write function factorial.
+
+function factorial(n) {
+  if (n === 0) {
+      return 1;
+  } else {
+      return n * factorial(n - 1);
+  }
+}
